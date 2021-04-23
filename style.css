@@ -54,6 +54,8 @@ body {
 }
 
 #image {
+    display: block;
+    margin: auto;
     max-width: 100%;
     border-radius: 10px;
 }
