@@ -1,0 +1,78 @@
+/* style dasar */
+:root {
+    /* color */
+    --background-color: #DBD9CD;
+    --font-color: #42423d;
+
+    /* font */
+    --font-dasar: OpenSans-Regular, arial, sans-serif;
+}
+
+/* font internal */
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(font/OpenSans-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-dasar);
+    color: var(--font-color);
+}
+
+/* main */
+#main {
+    background: var(--background-color);
+    max-width: 100%;
+    margin: auto;
+    padding: 20px 15px;
+}
+
+/* header */
+#header {
+    text-align: center;
+}
+
+#title {
+    font-size: 2.5rem;
+}
+
+#sub-title {
+    padding: 10px 0;
+}
+
+#img-div {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 4px rgba(0,0,0,0.1);
+}
+
+#image {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#img-caption {
+    padding: 5px 0;
+    line-height: 1.3;
+}
+
+/* responsive breakpoint */
+@media screen and (min-width: 460px) {
+    body {
+        padding: 20px 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #img-div {
+        max-width: 1000px;
+        margin: auto;
+    }
+}
