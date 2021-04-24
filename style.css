@@ -31,6 +31,12 @@ body {
     color: var(--font-color);
 }
 
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
 #title {
     font-size: 2.5rem;
     font-family: var(--title-font);
@@ -62,9 +68,6 @@ body {
 }
 
 #image {
-    display: block;
-    margin: auto;
-    max-width: 100%;
     border-radius: 10px;
 }
 
@@ -87,8 +90,25 @@ body {
 }
 
 /* list card film */
-ul {
+#list-card-film {
     list-style: none;
+}
+
+#card {
+    width: 190px;
+    margin: auto;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 4px rgba(0,0,0, 0.1);
+}
+
+#card img {
+    border-radius: 10px;
+}
+
+#card p {
+    padding: 20px 10px;
 }
 
 /* responsive breakpoint */
