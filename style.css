@@ -92,11 +92,14 @@ img {
 /* list card film */
 #list-card-film {
     list-style: none;
+    display: grid;
+    justify-content: center;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, 190px);
+    padding: 20px;
 }
 
 #card {
-    width: 190px;
-    margin: auto;
     text-align: center;
     background: white;
     border-radius: 10px;
