@@ -86,28 +86,39 @@ img {
 }
 
 #bio {
-    text-align: center;
+    margin-bottom: 10px;
 }
 
 /* list card film */
 #list-card-film {
     list-style: none;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    grid-template-columns: repeat(auto-fit, 190px);
     padding: 20px;
 }
 
 #card {
+    width: 190px;
+    margin: 10px;
     text-align: center;
     background: white;
     border-radius: 10px;
     box-shadow: 0 0 4px 4px rgba(0,0,0, 0.1);
 }
 
+#card a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+#card:hover {
+    opacity: 0.5;
+}
+
 #card img {
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 #card p {
